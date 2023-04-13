@@ -1,0 +1,70 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>predict</title>
+       <style>
+         body
+        {
+            background-image: url("https://editor.analyticsvidhya.com/uploads/92479airplane-wallpaper-2.jpg");
+            background-color: cover;
+        }
+        h3.big
+        {
+            line-height: 1.8;
+        }
+       </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bg-light text-right">
+                <a href="/home" class="btn btn-primary disabled btn-lg">Home</a>
+                <a href="/predict" class="btn btn-primary disabled btn-lg">Predict</a>
+            </div>
+        </div>
+        <br>
+        <h1><strong>Flight Price Prediction</strong></h1><br>
+        <h4>
+            <form action="/pred", method="post">
+                <lable for="airline">airline</lable>
+                <select id="airline">
+                    <option value="Air India">Air India</option>
+                    <option value="Air Asia">Air Asia</option>
+                    <option value="GoAir">GoAir</option>
+                  </select>
+                <label for="Source">Source</labele>
+                    <select id="Source">
+                        <option value="Chennai">Kolkata</option>
+                        <option value="Bengaluru">Bengalore</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                <lable for="Destination">Destination</lable>
+                    <select id="Source">
+                         <option value="Chennai">Chennai</option>
+                         <option value="Bengaluru">Bengaluru</option>
+                         <option value="Delhi">Delhi</option>
+                    </select>
+                <lable for="depdate">depdate</lable>
+                <input type="text" id="depdate" name="depdate"><br><br>
+                <lable for="depmonth">depmonth</lable>
+                <input type="text" id="depmonth" name="depmonth"><br><br>
+                <lable for="depyear">depyear</lable>
+                <input type="text" id="depyear" name="depyear"><br><br>
+                <lable for="deptimehour">deptimehour</lable>
+                <input type="text" id="deptimehour" name="deptimehour"><br><br>
+                <lable for="deptimemins">deptimemius</lable>
+                <input type="text" id="deptimemins" name="deptimemins"><br><br>   
+                <lable for="artime">artime</lable>
+                <input type="text" id="artime" name="artime"><br><br>
+                <lable for="artimehour">artimehour</lable>
+                <input type="text" id="artimehour" name="artimehour"><br><br>
+                <lable for="artimemins">artimemins</lable>
+                <input type="text" id="artimemins" name="artimemins"><br><br>
+                </label>
+                <button type="submit" class="btn btn-success btn-lg">submit</button>
+            </form>
+        </h4>
+    </div>
+</body>           
+</html>
